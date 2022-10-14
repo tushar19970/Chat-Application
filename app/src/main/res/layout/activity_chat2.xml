@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:background="@color/black">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/charRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentTop="true"/>
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/charRecyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/linearlayout"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginBottom="5dp" />-->
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="625dp"
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+        <EditText
+            android:id="@+id/messagebox"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Type a message"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_background"
+            android:layout_weight="85"/>
+
+        <ImageView
+            android:id="@+id/sentbutton"
+            android:layout_marginLeft="25dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/send"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
